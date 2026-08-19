@@ -15,6 +15,7 @@ SHIFT = (NEW_W - OLD_W) / 2
 
 DARK, MUTED_DARK = '.82 .58 .68 .72', '.3 .14 .28 .3'
 NAVY, NAVY_MUTED = '.94 .78 .38 .52', '.38 .22 .10 .28'
+MUTED_CREAM, NAVY_MUTED_CREAM = '.52 .34 .42 .28', '.58 .40 .20 .28'
 
 BG_OLD, BORDER_OLD = 'n 0 0 144 576 re f*', 'n 6.12 6.12 131.76 563.76 re S'
 BG_NEW = 'n 0 0 %g %g re f*' % (NEW_W, H)

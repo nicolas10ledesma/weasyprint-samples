@@ -11,7 +11,8 @@ from pypdf import PdfReader, PdfWriter
 from pypdf.generic import DecodedStreamObject, NameObject
 
 DARK, MUTED_DARK = '.82 .58 .68 .72', '.3 .14 .28 .3'      # what is in source/
-NAVY, NAVY_MUTED = '.94 .78 .38 .52', '.38 .22 .10 .28'    # what we want
+NAVY, NAVY_MUTED = '.94 .78 .38 .52', '.38 .22 .10 .28'
+MUTED_CREAM, NAVY_MUTED_CREAM = '.52 .34 .42 .28', '.58 .40 .20 .28'    # what we want
 
 # Page 1 is the dark card, page 2 the cream one. Only page 1 is recoloured;
 # the cream card keeps its original ink.

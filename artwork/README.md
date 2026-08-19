@@ -29,20 +29,21 @@ sheet, dark version on page 1 and cream on page 2.
 | `source/` | The two PDFs as they came out of the design tool. Do not send these to a printer. |
 | `print/HORIZONTAL-7.9x1.9-outlined.pdf` | Counter piece, text outlined. **Send this one.** |
 | `print/VERTICAL-2x8-outlined.pdf` | Check-presenter piece, text outlined. **Send this one.** |
-| `print/HORIZONTAL-7.9x1.9-NAVY-outlined.pdf` | **Current counter piece.** Dark side in midnight navy, cream side untouched. |
-| `print/VERTICAL-2x8-NAVY-outlined.pdf` | Check-presenter piece, 2 in wide. Superseded by the 3 in version. |
+| `print/HORIZONTAL-7.9x1.9-NAVY-outlined.pdf` | **Current counter piece.** Navy background on page 1, navy ink on cream on page 2. |
 | `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | **Current check-presenter piece, 3 in wide.** Three per Letter sheet, landscape. |
 | `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | The same 3 in card, two per portrait sheet, for a printer that clips the 3up. |
 | `print/COLOR-OPTIONS.pdf` | The four dark colourways at real size. Midnight navy was chosen. |
-| `print/CREAM-INK-CHECK.pdf` | The cream card in green ink and in navy ink, side by side — open question. |
+| `print/CREAM-INK-CHECK.pdf` | The cream card in green ink and in navy ink, side by side. Navy won. |
+| `archive/` | The original green files. Kept for reference, not for printing. |
 
 ## Colours
 
 | Role | CMYK |
 |---|---|
-| Midnight navy (chosen, dark side) | 94 · 78 · 38 · 52 |
-| Muted line on navy | 38 · 22 · 10 · 28 |
-| Dark green (original; still the ink on the cream side) | 82 · 58 · 68 · 72 |
+| Midnight navy — background on the dark card, ink on the cream one | 94 · 78 · 38 · 52 |
+| Muted line, on the navy card | 38 · 22 · 10 · 28 |
+| Muted line, on the cream card | 58 · 40 · 20 · 28 |
+| Dark green (original, retired) | 82 · 58 · 68 · 72 |
 | Gold | 16 · 32 · 95 · 5 |
 | Cream | 2 · 3 · 10 · 0 |
 | Muted line, on dark | 30 · 14 · 28 · 30 |
@@ -75,6 +76,14 @@ no font survived outlining and no colour fell out of CMYK. Measured today:
 
 Both pages of each file measure identically, so a dark piece and a cream piece
 from the same set trim to the same size.
+
+Contrast, both cards (WCAG ratio against their own background): headline
+**15.4 : 1**, muted "ONE TAP" line **4.9 : 1**, gold **7.0 : 1** on navy and
+**2.2 : 1** on cream. The gold is decorative on the cream card, not something a
+guest has to read at arm's length; everything that carries meaning clears 4.5.
+
+Ink coverage peaks at **262 %** on the navy, down from 280 % on the green it
+replaced — comfortably inside what a digital press or a laser will hold.
 
 **There is no bleed.** The colour stops exactly on the trim line, so a cut that
 drifts outward leaves a white sliver along a dark card. Cutting half a
