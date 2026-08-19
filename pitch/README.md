@@ -21,8 +21,8 @@ weasyprint dossier.html dossier.pdf
 
 - **Name.** Both files sign off as `Gus` — the brand name is still undecided, so nothing is
   branded. One string per file.
-- **Prices.** `$79` counter stand · `$10` per check-presenter card · `$149` for the set of one
-  stand plus ten cards ($179 bought separately, so the set saves $30). All three live in the price
+- **Prices.** `$30` per counter stand · `$15` per check-presenter card · `$150` for the set of two
+  stands plus ten cards ($210 bought one by one, so the set saves $60). All three live in the price
   block of each file, plus the fine print in `dossier.html`.
 - **Phone and email** appear in the contact block of each file, plus the running footer of
   `dossier.css` (`@bottom-right`).
