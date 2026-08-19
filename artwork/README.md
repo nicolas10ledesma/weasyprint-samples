@@ -61,6 +61,26 @@ from the options sheet, background then the muted line that goes with it:
 The dark colour is also the ink colour on the cream version (page 2), so
 changing it changes both sides of the set.
 
+## Checking the files
+
+`verify.py` renders every file in `print/` at 300 dpi and measures the sheet,
+the trim size of each card, the margins and the guillotine gaps, and confirms
+no font survived outlining and no colour fell out of CMYK. Measured today:
+
+| File | Trim | Per sheet | Tightest margin | Gap to cut in |
+|---|---|---|---|---|
+| `HORIZONTAL-7.9x1.9-NAVY` | 7.903 × 1.900 in | 3 | 0.650 in | 0.750 in |
+| `VERTICAL-3x8-NAVY-3up` | 3.003 × 8.000 in | 3 | 0.250 in | 0.497 in |
+| `VERTICAL-3x8-NAVY-2up` | 3.000 × 8.003 in | 2 | 0.833 in | 0.833 in |
+
+Both pages of each file measure identically, so a dark piece and a cream piece
+from the same set trim to the same size.
+
+**There is no bleed.** The colour stops exactly on the trim line, so a cut that
+drifts outward leaves a white sliver along a dark card. Cutting half a
+millimetre *inside* the card avoids it and nobody can tell. A bleed-and-crop-marks
+version is only worth making for a commercial shop that trims for you.
+
 ## Reprint checklist
 
 - Scale **100 %**, never "fit to page". Measure the first sheet: the horizontal
