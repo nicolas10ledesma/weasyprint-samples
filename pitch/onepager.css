@@ -23,8 +23,8 @@ html {
 body {
   margin: 0;
   font-family: "Bitstream Charter", Charter, serif;
-  font-size: 8.35pt;
-  line-height: 1.42;
+  font-size: 8.2pt;
+  line-height: 1.38;
   color: var(--ink);
   hyphens: none;
 }
@@ -94,7 +94,7 @@ h2 {
 
 /* ---------- how it works ---------- */
 
-.how { margin-bottom: 0.13in; }
+.how { margin-bottom: 0.11in; }
 
 .how ol {
   list-style: none;
@@ -128,8 +128,8 @@ h2 {
 
 .mid {
   display: flex;
-  gap: 0.24in;
-  margin-bottom: 0.14in;
+  gap: 0.22in;
+  margin-bottom: 0.12in;
 }
 .whatyouget { flex: 1.32; }
 .rules { flex: 1; }
@@ -151,8 +151,8 @@ li { margin-bottom: 0.048in; }
 /* ---------- the piece figure ---------- */
 
 .piecefig {
-  width: 3.5in;
-  height: 0.875in;
+  width: 3.2in;
+  height: 0.8in;
   background: var(--dark);
   color: var(--paper);
   display: flex;
@@ -162,7 +162,7 @@ li { margin-bottom: 0.048in; }
   margin-bottom: 0.035in;
 }
 .pz {
-  width: 1.1in;
+  width: 0.92in;
   text-align: center;
   line-height: 1.15;
 }
@@ -184,7 +184,7 @@ li { margin-bottom: 0.048in; }
 }
 .pc { flex: 1; text-align: center; line-height: 1.2; }
 .stars { display: block; font-size: 7pt; color: #E2A63A; letter-spacing: 0.08em; }
-.bn { display: block; font-size: 12pt; font-weight: bold; letter-spacing: 0.03em; }
+.bn { display: block; font-size: 10.5pt; font-weight: bold; letter-spacing: 0.03em; }
 .tl { display: block; font-size: 5.6pt; letter-spacing: 0.2em; color: #98A2A6; }
 
 .figcap {
@@ -198,41 +198,54 @@ li { margin-bottom: 0.048in; }
 /* ---------- price ---------- */
 
 .price {
-  display: flex;
-  align-items: center;
-  gap: 0.3in;
   border-top: 0.8pt solid var(--rule);
   border-bottom: 0.8pt solid var(--rule);
-  padding: 0.075in 0;
+  padding: 0.09in 0 0.08in;
   margin-bottom: 0.1in;
 }
 .price h2 { border: none; margin: 0 0 0.01in; padding: 0; }
-.price .pl { flex: 0 0 1.25in; }
-.price .pl p { margin: 0; font-size: 7.6pt; color: var(--soft); }
-.pitems { display: flex; flex: 1; gap: 0.22in; }
-.pi { flex: 1; display: flex; align-items: baseline; gap: 0.07in; }
-.pi.hi .amt { color: var(--amber); }
-.pi.hi .lbl { color: var(--ink); }
-.amt {
-  font-size: 15.5pt;
-  font-weight: bold;
-  color: var(--pine);
-  letter-spacing: -0.02em;
-}
-.lbl {
+.price .ph { display: flex; align-items: baseline; gap: 0.18in; margin-bottom: 0.06in; }
+.price .ph p { margin: 0; font-size: 7.4pt; color: var(--soft); }
+
+.ptabs { display: flex; gap: 0.3in; }
+.ptab { flex: 1; border-collapse: collapse; font-size: 7.6pt; }
+.ptab th {
+  font-family: "Liberation Sans", Arial, sans-serif;
   font-size: 6.4pt;
-  line-height: 1.2;
-  color: var(--soft);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--faint);
+  text-align: left;
+  padding: 0 0 0.025in;
+  border-bottom: 0.6pt solid var(--ink);
 }
+.ptab td { padding: 0.032in 0 0.028in; border-bottom: 0.5pt solid var(--rule); color: var(--soft); }
+.ptab tr:last-child td { border-bottom: none; }
+.ptab .n {
+  font-family: "Liberation Sans", Arial, sans-serif;
+  text-align: right;
+  width: 0.52in;
+  padding-left: 0.1in;
+  font-variant-numeric: tabular-nums;
+}
+.ptab td.n { font-weight: bold; color: var(--pine); font-size: 8.6pt; }
+.ptab tr td.n:last-child { color: var(--amber); }
+
+.smallpacks {
+  margin: 0.06in 0 0;
+  font-size: 7.2pt;
+  color: var(--soft);
+}
+.smallpacks strong { color: var(--pine); }
 
 /* ---------- also ---------- */
 
 .also {
   display: flex;
-  gap: 0.22in;
+  gap: 0.2in;
   align-items: baseline;
-  margin-bottom: 0.1in;
+  margin-bottom: 0.09in;
 }
 .also h3 {
   flex: 0 0 1.6in;
