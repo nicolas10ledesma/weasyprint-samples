@@ -30,7 +30,9 @@ sheet, dark version on page 1 and cream on page 2.
 | `print/HORIZONTAL-7.9x1.9-outlined.pdf` | Counter piece, text outlined. **Send this one.** |
 | `print/VERTICAL-2x8-outlined.pdf` | Check-presenter piece, text outlined. **Send this one.** |
 | `print/HORIZONTAL-7.9x1.9-NAVY-outlined.pdf` | **Current counter piece.** Dark side in midnight navy, cream side untouched. |
-| `print/VERTICAL-2x8-NAVY-outlined.pdf` | **Current check-presenter piece.** Same. |
+| `print/VERTICAL-2x8-NAVY-outlined.pdf` | Check-presenter piece, 2 in wide. Superseded by the 3 in version. |
+| `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | **Current check-presenter piece, 3 in wide.** Three per Letter sheet, landscape. |
+| `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | The same 3 in card, two per portrait sheet, for a printer that clips the 3up. |
 | `print/COLOR-OPTIONS.pdf` | The four dark colourways at real size. Midnight navy was chosen. |
 | `print/CREAM-INK-CHECK.pdf` | The cream card in green ink and in navy ink, side by side — open question. |
 
@@ -65,5 +67,8 @@ changing it changes both sides of the set.
   must come out 7.9 in wide.
 - Cardstock 14 pt (~250 g/m²) or heavier, so the NFC inlay doesn't telegraph
   through the paper.
+- The 3up vertical sheet leaves only 0.25 in above and below the cards. Print one
+  sheet and check nothing is clipped before running the batch; if it is, use the
+  2up file instead.
 - Ask for a **proof on the actual stock** before the full run. Dark backgrounds
   shift a lot between screen and paper.
