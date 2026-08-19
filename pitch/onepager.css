@@ -94,7 +94,7 @@ h2 {
 
 /* ---------- how it works ---------- */
 
-.how { margin-bottom: 0.15in; }
+.how { margin-bottom: 0.13in; }
 
 .how ol {
   list-style: none;
@@ -203,23 +203,25 @@ li { margin-bottom: 0.048in; }
   gap: 0.3in;
   border-top: 0.8pt solid var(--rule);
   border-bottom: 0.8pt solid var(--rule);
-  padding: 0.09in 0;
-  margin-bottom: 0.12in;
+  padding: 0.075in 0;
+  margin-bottom: 0.1in;
 }
 .price h2 { border: none; margin: 0 0 0.01in; padding: 0; }
-.price .pl { flex: 0 0 1.6in; }
+.price .pl { flex: 0 0 1.25in; }
 .price .pl p { margin: 0; font-size: 7.6pt; color: var(--soft); }
-.pitems { display: flex; flex: 1; gap: 0.3in; }
-.pi { display: flex; align-items: baseline; gap: 0.08in; }
+.pitems { display: flex; flex: 1; gap: 0.22in; }
+.pi { flex: 1; display: flex; align-items: baseline; gap: 0.07in; }
+.pi.hi .amt { color: var(--amber); }
+.pi.hi .lbl { color: var(--ink); }
 .amt {
-  font-size: 17pt;
+  font-size: 15.5pt;
   font-weight: bold;
   color: var(--pine);
   letter-spacing: -0.02em;
 }
 .lbl {
-  font-size: 6.8pt;
-  line-height: 1.25;
+  font-size: 6.4pt;
+  line-height: 1.2;
   color: var(--soft);
   letter-spacing: 0.02em;
 }
@@ -230,7 +232,7 @@ li { margin-bottom: 0.048in; }
   display: flex;
   gap: 0.22in;
   align-items: baseline;
-  margin-bottom: 0.12in;
+  margin-bottom: 0.1in;
 }
 .also h3 {
   flex: 0 0 1.6in;
@@ -245,12 +247,13 @@ li { margin-bottom: 0.048in; }
 /* ---------- contact ---------- */
 
 .contact {
+  break-inside: avoid;
   display: flex;
   align-items: center;
   gap: 0.25in;
   background: var(--pine);
   color: #EAF1EE;
-  padding: 0.13in 0.16in;
+  padding: 0.12in 0.16in;
 }
 .contact .cl { flex: 1; }
 .ceyebrow {

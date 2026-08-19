@@ -21,8 +21,9 @@ weasyprint dossier.html dossier.pdf
 
 - **Name.** Both files sign off as `Gus` — the brand name is still undecided, so nothing is
   branded. One string per file.
-- **Prices.** `$79` / `$149` / `$25` live in the price blocks. The research put the sustainable
-  range at $49–79 for the counter piece and $129–179 for the set.
+- **Prices.** `$79` counter stand · `$10` per check-presenter card · `$149` for the set of one
+  stand plus ten cards ($179 bought separately, so the set saves $30). All three live in the price
+  block of each file, plus the fine print in `dossier.html`.
 - **Phone and email** appear in the contact block of each file, plus the running footer of
   `dossier.css` (`@bottom-right`).
 - **Logos.** No Google or Yelp logo is used anywhere — only the nominative wording
