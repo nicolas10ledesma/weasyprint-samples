@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tap Here. Review Posted. — business presentation</title>
+<style>
+  @page {
+    size: Letter;
+    margin: 0.6in 0.62in 0.72in 0.62in;
+    @bottom-center {
+      content: "Tap once, the review is written  ·  South Lake Tahoe  ·  page " counter(page) " of " counter(pages);
+      font-family: "Liberation Sans", Arial, sans-serif;
+      font-size: 7pt;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #8A9699;
+      padding-top: 10pt;
+    }
+  }
+  @page :first { margin-top: 0.45in; }
+
+  :root {
+    --ink: #14191C;
+    --soft: #4E5A5E;
+    --faint: #7C8A8E;
+    --pine: #1F4D42;
+    --amber: #C88A1E;
+    --wash: #F1F4F3;
+    --rule: #D3DBD9;
+  }
+
+  * { box-sizing: border-box; }
+  html { font-size: 10pt; }
+  body {
+    margin: 0;
+    font-family: "Bitstream Charter", Charter, Georgia, serif;
+    color: var(--ink);
+    line-height: 1.38;
+  }
+
+  .page-break { break-before: page; }
+
+  /* ---------- masthead ---------- */
+  .masthead { background: var(--pine); color: #FFFFFF; padding: 26pt 24pt 26pt; }
+  .masthead .eyebrow {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 7pt; letter-spacing: 0.20em; text-transform: uppercase;
+    color: #A9C6BC; margin: 0 0 10pt;
+  }
+  .masthead h1 {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 32pt; line-height: 0.98; font-weight: bold; text-transform: uppercase;
+    margin: 0 0 12pt;
+  }
+  .masthead .lead { font-size: 11pt; line-height: 1.42; margin: 0; color: #E4EEEA; }
+  .amberbar { height: 5pt; background: var(--amber); }
+
+  /* ---------- page heads ---------- */
+  .pagehead {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 19pt; font-weight: bold; text-transform: uppercase;
+    color: var(--pine); margin: 0 0 4pt; line-height: 1.05;
+  }
+  .pagehead + .deck { font-size: 10pt; color: var(--soft); margin: 0 0 13pt; }
+
+  h2 {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 9.5pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--pine); margin: 0 0 7pt; padding-bottom: 3pt; border-bottom: 0.8pt solid var(--ink);
+  }
+  h3 {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 10.5pt; text-transform: uppercase; letter-spacing: 0.01em;
+    margin: 0 0 3pt; color: var(--ink);
+  }
+
+  p { margin: 0 0 8pt; }
+  p:last-child { margin-bottom: 0; }
+  .band { margin-top: 16pt; }
+  .band-sm { margin-top: 9pt; }
+
+  ul { margin: 0; padding-left: 12pt; }
+  li { margin-bottom: 4pt; line-height: 1.36; font-size: 9.6pt; }
+  li:last-child { margin-bottom: 0; }
+
+  /* ---------- three steps ---------- */
+  table.steps { width: 100%; border-collapse: separate; border-spacing: 11pt 0; margin: 0 -11pt; }
+  table.steps td { width: 33.33%; vertical-align: top; padding: 0; }
+  .step .n {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 8pt; font-weight: bold; letter-spacing: 0.1em; color: var(--amber);
+    border-top: 2.5pt solid var(--amber); padding-top: 5pt; display: block; margin-bottom: 5pt;
+  }
+  .step p { font-size: 9.2pt; line-height: 1.36; color: var(--soft); }
+
+  /* ---------- pieces ---------- */
+  .piece { border-top: 0.8pt solid var(--rule); padding-top: 8pt; margin-bottom: 9pt; }
+  .piece:first-of-type { border-top: none; padding-top: 0; }
+  .piece .tag {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 7.2pt; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--faint); margin: 0 0 3pt;
+  }
+  .piece p.body { font-size: 9.3pt; line-height: 1.36; }
+
+  /* ---------- boxes ---------- */
+  .box { background: var(--wash); border-left: 3.5pt solid var(--pine); padding: 10pt 13pt; }
+  .box .h {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 8.4pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.11em;
+    color: var(--pine); display: block; margin-bottom: 6pt;
+  }
+  .box p, .box li { font-size: 9.2pt; line-height: 1.36; }
+
+  table.rules { width: 100%; border-collapse: collapse; margin-top: 8pt; font-size: 8.8pt; }
+  table.rules th {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 7.4pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint);
+    text-align: left; font-weight: normal; padding: 0 10pt 4pt 0; border-bottom: 0.8pt solid var(--ink);
+  }
+  table.rules td { padding: 4.5pt 10pt 4.5pt 0; border-bottom: 0.6pt solid var(--rule); vertical-align: top; }
+  table.rules tr:last-child td { border-bottom: none; }
+
+  /* ---------- pricing ---------- */
+  table.price { width: 100%; border-collapse: separate; border-spacing: 11pt 0; margin: 0 -11pt; }
+  table.price td { width: 50%; vertical-align: top; padding: 0; }
+  .card { border: 0.8pt solid var(--rule); padding: 10pt 12pt 11pt; }
+  .card.feature { border: 1.8pt solid var(--pine); }
+  .card .tier {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 7.6pt; font-weight: bold; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--faint); margin: 0 0 4pt;
+  }
+  .card .amount {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 23pt; font-weight: bold; color: var(--pine); line-height: 1; margin: 0 0 7pt;
+  }
+  .card .amount span {
+    font-size: 8.4pt; font-weight: normal; text-transform: uppercase; letter-spacing: 0.09em; color: var(--faint);
+  }
+  .card p { font-size: 9.1pt; line-height: 1.36; color: var(--soft); }
+
+  /* ---------- steps list ---------- */
+  ol.flow { list-style: none; padding: 0; margin: 0; }
+  ol.flow > li {
+    margin: 0 0 8pt; padding-left: 26pt; position: relative; line-height: 1.37; font-size: 9.5pt;
+  }
+  ol.flow > li .num {
+    position: absolute; left: 0; top: 0;
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 9pt; font-weight: bold; color: var(--amber);
+  }
+
+  /* ---------- faq ---------- */
+  .faq { margin-bottom: 7pt; }
+  .faq .q {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 9.4pt; font-weight: bold; margin: 0 0 2pt; color: var(--ink);
+  }
+  .faq .a { font-size: 9.2pt; line-height: 1.35; color: var(--soft); margin: 0; }
+
+  /* ---------- contact ---------- */
+  .contact { background: var(--ink); color: #FFFFFF; padding: 14pt 17pt; margin-top: 15pt; }
+  .contact table { width: 100%; border-collapse: collapse; }
+  .contact td { vertical-align: middle; padding: 0; }
+  .contact .who {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 7.2pt; letter-spacing: 0.18em; text-transform: uppercase; color: #96A3A6; margin: 0 0 6pt;
+  }
+  .contact .line {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 17pt; font-weight: bold; margin: 0 0 3pt;
+  }
+  .contact .mail { font-family: "Liberation Sans", Arial, sans-serif; font-size: 11.5pt; color: #E7EDEE; margin: 0; }
+  .contact .ask { font-size: 9.6pt; line-height: 1.4; color: #D6DEE0; margin: 0; text-align: right; }
+  .contact .ask b { color: #F0C266; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<!-- ===================== PAGE 1 ===================== -->
+
+<header class="masthead">
+  <p class="eyebrow">NFC review signs &middot; made in South Lake Tahoe</p>
+  <h1>One tap.<br>The review is written.</h1>
+  <p class="lead">A small sign on your counter with your restaurant&rsquo;s name printed on it. The guest touches it with their phone and your Google review page opens by itself &mdash; no app, no QR code, no searching for your business.</p>
+</header>
+<div class="amberbar"></div>
+
+<section class="band">
+  <h2>The problem you already know about</h2>
+  <p>Most of the people who walk through your door in July are visitors. They eat once, they say it was great, and they drive home. The review they meant to leave never gets written, because by the time they think of it they are two hours down the 50 and can&rsquo;t remember your name.</p>
+  <p>Meanwhile the next visitor is standing in a hotel room searching &ldquo;dinner near me,&rdquo; and what decides where they go is the number under your stars. The gap between the people who liked you and the people who said so in public is the whole thing this fixes.</p>
+</section>
+
+<section class="band">
+  <h2>How it works</h2>
+  <table class="steps">
+    <tr>
+      <td class="step">
+        <span class="n">STEP 1</span>
+        <h3>They tap</h3>
+        <p>The guest holds their phone over the sign while they are paying. It works on every iPhone since the XR and on all modern Android phones, with nothing to download and nothing to open first.</p>
+      </td>
+      <td class="step">
+        <span class="n">STEP 2</span>
+        <h3>Your page opens</h3>
+        <p>A notification appears on their screen. One tap on it and your Google review box opens &mdash; already on your listing, stars ready. It is your page, not a form of mine that collects anything.</p>
+      </td>
+      <td class="step">
+        <span class="n">STEP 3</span>
+        <h3>They write it there</h3>
+        <p>Three seconds instead of two minutes. That is the entire difference between a review you get and a review that never happens, and it is why this works where a card in the bill does not.</p>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="band">
+  <div class="box">
+    <span class="h">Why it beats the QR code you already tried</span>
+    <p>A QR code needs a camera app, decent light, a steady hand and a guest who is willing to point a phone at a table tent. A tap needs none of that &mdash; the phone is already in their hand and the sign is already at the register. Every piece I build carries a QR code as well, printed small on the same sign, so the handful of older phones are covered too. The tap is what gets used.</p>
+  </div>
+</section>
+
+
+<section class="band-sm">
+  <h2>Who it is built for</h2>
+  <table class="steps">
+    <tr>
+      <td class="step" style="width:50%">
+        <p style="font-size:9.4pt; line-height:1.36; color:#4E5A5E; margin:0;">Restaurants, bars and cafes &middot; ski, board and bike rentals &middot; hotels, cabins and short-term rentals &middot; fishing and tour guides &middot; salons, groomers and vet clinics.</p>
+      </td>
+      <td class="step" style="width:50%">
+        <p style="font-size:9.4pt; line-height:1.36; color:#4E5A5E; margin:0;">Anywhere the customer is standing in front of you with a phone in their hand and a good opinion they are never going to type in on their own.</p>
+      </td>
+    </tr>
+  </table>
+  <p style="font-size:9.4pt; margin-top:9pt;"><b>I live here.</b> I build the pieces here and bring them to you myself, and if something goes wrong I am ten minutes away &mdash; not a support ticket in another time zone.</p>
+</section>
+
+<!-- ===================== PAGE 2 ===================== -->
+<div class="page-break"></div>
+
+<h1 class="pagehead">What sits on your counter</h1>
+<p class="deck">Three pieces. You can start with one and add the others later.</p>
+
+<div class="piece">
+  <p class="tag">Piece one &mdash; the counter sign</p>
+  <h3>8 &times; 2 inches, acrylic stand, your name on it</h3>
+  <p class="body">A horizontal sign in a clean acrylic holder, sitting by the register at the angle the guest is already looking. Two tap zones, one at each end: <b>Google on the left, Yelp on the right</b>, far enough apart that a phone never reads the wrong one. The printed insert slides out, so a new logo does not mean a new sign.</p>
+</div>
+
+<div class="piece">
+  <p class="tag">Piece two &mdash; the check presenter card</p>
+  <h3>A slim laminated card for the bill folder</h3>
+  <p class="body">Same idea, rotated: 2 &times; 8 inches, so it stands above the pocket of a standard check presenter and is the first thing the guest sees on opening it. One tap zone, Google only &mdash; this is the moment they are happiest and not the moment to offer options.</p>
+</div>
+
+<div class="piece">
+  <p class="tag">Piece three &mdash; the custom shape</p>
+  <h3>Cut to the shape of what you sell</h3>
+  <p class="body">A piece cut in the outline of a pizza slice, a snowboard, a coffee cup, a dog&rsquo;s paw &mdash; whatever your business actually is. This is the one guests pick up out of curiosity, which is the point. It comes in the full set.</p>
+</div>
+
+<section class="band-sm">
+  <h2>What is inside, and what happens after you buy it</h2>
+  <ul>
+    <li><b>A passive chip: no battery, no wifi.</b> Nothing to charge, nothing to connect, and it works during a power cut.</li>
+    <li><b>It points through my own short link, not straight at Google.</b> If your listing moves or your name changes, I repoint it in seconds and you keep the same piece. A sign with the raw Google link burned in becomes garbage the day that happens.</li>
+    <li><b>You get a tap count</b> &mdash; how many people used it this month, so the thing is measurable rather than a nice idea. The chip is locked, so nobody can reprogram your sign.</li>
+    <li><b>I set the whole thing up</b> &mdash; find your listing, program it, print your name, test it, hand it over working. Nothing for your staff to configure.</li>
+  </ul>
+</section>
+
+<section class="band-sm">
+  <div class="box">
+    <span class="h">Built to keep you out of trouble</span>
+    <p>This niche is full of products that quietly break the rules, and when they get caught the penalty lands on the owner&rsquo;s listing, not on the vendor who sold the sign. Mine is built the other way around.</p>
+    <table class="rules">
+      <thead>
+        <tr><th style="width:31%">The shortcut others sell</th><th style="width:34%">What it costs you</th><th style="width:35%">What I do instead</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A &ldquo;how was your visit?&rdquo; screen that routes only happy guests to Google</td>
+          <td>That is review gating: Google prohibits it and the FTC banned review suppression in 2024.</td>
+          <td>The sign opens Google directly &mdash; no screen in between, no filter.</td>
+        </tr>
+        <tr>
+          <td>&ldquo;Leave a review, get a free dessert&rdquo;</td>
+          <td>Google removes the reviews and can suspend the whole business profile.</td>
+          <td>Nothing is ever offered in exchange, and the wording asks for a review, never for a rating.</td>
+        </tr>
+        <tr>
+          <td>A tag that opens Yelp&rsquo;s review form</td>
+          <td>Yelp penalizes the business, not the vendor: a public Consumer Alert and a ranking hit.</td>
+          <td>The Yelp zone opens your Yelp <b>business page</b> and reads &ldquo;Find us on Yelp&rdquo; &mdash; the wording Yelp hands out stickers for.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== PAGE 3 ===================== -->
+<div class="page-break"></div>
+
+<h1 class="pagehead">What it costs</h1>
+<p class="deck">One payment. No subscription, no monthly fee, nothing to cancel.</p>
+
+<table class="price">
+  <tr>
+    <td>
+      <div class="card">
+        <p class="tier">Counter sign</p>
+        <p class="amount">$79 <span>one time</span></p>
+        <p>The 8 &times; 2 acrylic sign with your name, Google and Yelp tap zones, programmed, tested and set up on your counter. Extra check-presenter cards, $15 each.</p>
+      </div>
+    </td>
+    <td>
+      <div class="card feature">
+        <p class="tier">Full set</p>
+        <p class="amount">$149 <span>one time</span></p>
+        <p>The counter sign, a laminated check-presenter card, and a custom-shaped piece cut for your business. This is what most places end up with.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p style="font-size:9.4pt; color:#4E5A5E; margin-top:9pt;">If a piece ever stops working, I replace it. If your listing changes, repointing it is free and always will be.</p>
+
+<section class="band">
+  <h2>How we start</h2>
+  <ol class="flow">
+    <li><span class="num">01</span><b>Tap the sample I left you.</b> It is already programmed with your business, so your own review page will open. Keep it either way.</li>
+    <li><span class="num">02</span><b>Text me a yes and your logo</b> if you have one. If you don&rsquo;t, your name set in clean type looks better than most logos anyway.</li>
+    <li><span class="num">03</span><b>I bring the finished pieces in about three days</b> and set them up myself, at whatever hour is quiet for you.</li>
+    <li><span class="num">04</span><b>I check back after a month</b> with the tap count, so you can see what it actually did.</li>
+  </ol>
+</section>
+
+<section class="band">
+  <h2>Questions I get asked</h2>
+
+  <div class="faq">
+    <p class="q">Does it work on every phone?</p>
+    <p class="a">Every iPhone from the XR forward, and essentially every Android sold in the last several years &mdash; nothing to install on either. For the rest, the same sign carries a small printed QR code.</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">Does it need wifi or power?</p>
+    <p class="a">No. The chip has no battery and draws its power from the phone that touches it. The guest&rsquo;s own phone needs a connection to load the page, which it already has.</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">Won&rsquo;t this bring in bad reviews too?</p>
+    <p class="a">It can, and I won&rsquo;t pretend otherwise &mdash; filtering them out is the exact shortcut that gets businesses penalized. But the unhappy guest was always going to find your page on their own; it is the happy majority that needed the three-second path. Making it easy for everyone moves the average up, because most of your room liked you.</p>
+  </div>
+
+  <div class="faq">
+    <p class="q">What if we change our name or move?</p>
+    <p class="a">Text me and I repoint it that day, at no cost. The pieces keep working; only the printed insert needs reprinting, a few dollars.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <table>
+    <tr>
+      <td style="width:56%">
+        <p class="who">Talk to me directly</p>
+        <p class="line">(385) 395-2285</p>
+        <p class="mail">nicolas10ledesma@gmail.com</p>
+      </td>
+      <td style="width:44%">
+        <p class="ask">The sample is <b>already programmed with your business</b>. Tap it with your phone &mdash; your own review page opens. Text me when you want one with your name printed on it.</p>
+      </td>
+    </tr>
+  </table>
+</section>
+
+</body>
+</html>

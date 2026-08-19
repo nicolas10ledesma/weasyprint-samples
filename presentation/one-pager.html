@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tap Here. Review Posted. — one-page business presentation</title>
+<style>
+  @page {
+    size: Letter;
+    margin: 0.34in 0.5in 0.3in 0.5in;
+  }
+
+  :root {
+    --ink: #14191C;
+    --soft: #4E5A5E;
+    --faint: #7C8A8E;
+    --pine: #1F4D42;
+    --amber: #C88A1E;
+    --paper: #FFFFFF;
+    --wash: #F1F4F3;
+    --rule: #D3DBD9;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { font-size: 10pt; }
+
+  body {
+    margin: 0;
+    font-family: "Bitstream Charter", Charter, Georgia, serif;
+    color: var(--ink);
+    line-height: 1.38;
+  }
+
+  .display {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    background: var(--pine);
+    color: #FFFFFF;
+    padding: 11pt 16pt 12pt;
+    position: relative;
+  }
+  .masthead .eyebrow {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 6.6pt;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: #A9C6BC;
+    margin: 0 0 7pt;
+  }
+  .masthead h1 {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 21pt;
+    line-height: 0.98;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    margin: 0 0 7pt;
+  }
+  .masthead .lead {
+    font-size: 9.4pt;
+    line-height: 1.32;
+    margin: 0;
+    max-width: 5.6in;
+    color: #E4EEEA;
+  }
+  .amberbar { height: 4pt; background: var(--amber); }
+
+  /* ---------- generic section head ---------- */
+
+  h2 {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--pine);
+    margin: 0 0 5pt;
+    padding-bottom: 2.5pt;
+    border-bottom: 0.8pt solid var(--ink);
+  }
+
+  p { margin: 0 0 6pt; }
+  p:last-child { margin-bottom: 0; }
+  strong { font-weight: bold; }
+
+  .band { margin-top: 9pt; }
+
+  /* ---------- three steps ---------- */
+
+  table.steps { width: 100%; border-collapse: separate; border-spacing: 9pt 0; margin: 0 -9pt; }
+  table.steps td { width: 33.33%; vertical-align: top; padding: 0; }
+  .step .n {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--amber);
+    border-top: 2pt solid var(--amber);
+    padding-top: 4pt;
+    display: block;
+    margin-bottom: 4pt;
+  }
+  .step h3 {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin: 0 0 3pt;
+  }
+  .step p { font-size: 8.3pt; line-height: 1.29; color: var(--soft); }
+
+  /* ---------- two columns ---------- */
+
+  table.two { width: 100%; border-collapse: separate; border-spacing: 14pt 0; margin: 0 -14pt; }
+  table.two > tbody > tr > td { width: 50%; vertical-align: top; padding: 0; }
+
+  ul { margin: 0; padding-left: 11pt; }
+  li { margin-bottom: 3pt; font-size: 8.6pt; line-height: 1.29; }
+  li:last-child { margin-bottom: 0; }
+  li b { font-weight: bold; }
+
+  /* ---------- compliance ---------- */
+
+  .compliance {
+    background: var(--wash);
+    border-left: 3pt solid var(--pine);
+    padding: 7pt 10pt;
+    font-size: 8.4pt;
+    line-height: 1.35;
+  }
+  .compliance .h {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    color: var(--pine);
+    display: block;
+    margin-bottom: 4pt;
+  }
+
+  /* ---------- pricing ---------- */
+
+  table.price { width: 100%; border-collapse: separate; border-spacing: 10pt 0; margin: 0 -10pt; }
+  table.price td { width: 50%; vertical-align: top; padding: 0; }
+  .card {
+    border: 0.8pt solid var(--rule);
+    padding: 7pt 9pt 8pt;
+  }
+  .card.feature { border: 1.6pt solid var(--pine); }
+  .card .tier {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 7.4pt;
+    font-weight: bold;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 3pt;
+  }
+  .card .amount {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 15.5pt;
+    font-weight: bold;
+    color: var(--pine);
+    line-height: 1;
+    margin: 0 0 5pt;
+  }
+  .card .amount span {
+    font-size: 8pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--faint);
+  }
+  .card p { font-size: 8.8pt; line-height: 1.32; color: var(--soft); }
+
+  /* ---------- contact ---------- */
+
+  .contact {
+    background: var(--ink);
+    color: #FFFFFF;
+    padding: 9pt 14pt;
+    margin-top: 8pt;
+  }
+  .contact table { width: 100%; border-collapse: collapse; }
+  .contact td { vertical-align: middle; padding: 0; }
+  .contact .who {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #96A3A6;
+    margin: 0 0 5pt;
+  }
+  .contact .line {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin: 0 0 2pt;
+  }
+  .contact .mail {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 10.5pt;
+    color: #E7EDEE;
+    margin: 0;
+  }
+  .contact .ask {
+    font-size: 9pt;
+    line-height: 1.35;
+    color: #D6DEE0;
+    margin: 0;
+    text-align: right;
+  }
+  .contact .ask b { color: #F0C266; font-weight: bold; }
+
+  .nosub { font-size: 8.5pt; color: var(--soft); margin-top: 6pt; }
+
+  .footnote {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    font-size: 6.8pt;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--faint);
+    text-align: center;
+    margin: 7pt 0 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <p class="eyebrow">NFC review signs &middot; made in South Lake Tahoe</p>
+  <h1>One tap.<br>The review is written.</h1>
+  <p class="lead">A small sign on your counter with your restaurant&rsquo;s name on it. The guest touches it with their phone and your Google review page opens by itself &mdash; no app, no QR code, no searching for your business.</p>
+</header>
+<div class="amberbar"></div>
+
+<section class="band">
+  <h2>How it works</h2>
+  <table class="steps">
+    <tr>
+      <td class="step">
+        <span class="n">STEP 1</span>
+        <h3>They tap</h3>
+        <p>The guest holds their phone over the sign while they pay. Works on every iPhone since the XR and on modern Android, with nothing to install.</p>
+      </td>
+      <td class="step">
+        <span class="n">STEP 2</span>
+        <h3>Your page opens</h3>
+        <p>A link appears and opens <b>your</b> Google review box, already on your listing with the stars ready. Not a search, not a form of mine.</p>
+      </td>
+      <td class="step">
+        <span class="n">STEP 3</span>
+        <h3>They write it there</h3>
+        <p>Three seconds instead of two minutes &mdash; the whole difference between a review you get and one that never happens.</p>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="band">
+  <table class="two">
+    <tr>
+      <td>
+        <h2>Why it pays for itself</h2>
+        <ul>
+          <li><b>Your best guests leave and never come back.</b> In summer most of the room is visitors. The review they don&rsquo;t leave at the table is one you never get.</li>
+          <li><b>Reviews decide who gets picked next.</b> Rating and review count are what a visitor sees searching &ldquo;dinner near me&rdquo; from a hotel room.</li>
+          <li><b>Nobody on your staff has to ask.</b> The sign does it every table, every shift, with no awkward moment.</li>
+        </ul>
+      </td>
+      <td>
+        <h2>What you get</h2>
+        <ul>
+          <li><b>A counter sign, 8 &times; 2 in, printed with your name</b> in a clean acrylic stand &mdash; not a generic white card with a sticker on it.</li>
+          <li><b>A second tap zone for Yelp</b>, pointing at your Yelp business page.</li>
+          <li><b>A slim card for the check presenter</b>, so the ask lands when the guest is happiest.</li>
+          <li><b>Set up for you:</b> I find your listing, program it, print your name and test it before handing it over.</li>
+          <li><b>Editable destination and a monthly tap count.</b> If your listing changes I repoint the same sign in seconds.</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="band">
+  <div class="compliance">
+    <span class="h">Built to keep you out of trouble</span>
+    <p>The sign opens Google directly. No &ldquo;how was your visit?&rdquo; screen that sends only happy guests through &mdash; that is review gating, banned by Google and by the FTC since 2024. No incentives for a review. And the Yelp side points at your Yelp <b>business page</b>, never its review form, because Yelp penalizes businesses whose customers get asked. Others in this space sell those shortcuts; the penalty lands on your listing, not theirs.</p>
+  </div>
+</section>
+
+<section class="band">
+  <h2>What it costs</h2>
+  <table class="price">
+    <tr>
+      <td>
+        <div class="card">
+          <p class="tier">Counter sign</p>
+          <p class="amount">$79 <span>one time</span></p>
+          <p>The 8 &times; 2 acrylic sign with your name, Google and Yelp tap zones, programmed and set up on your counter.</p>
+        </div>
+      </td>
+      <td>
+        <div class="card feature">
+          <p class="tier">Full set</p>
+          <p class="amount">$149 <span>one time</span></p>
+          <p>Counter sign, laminated check-presenter card, and a custom-shaped piece cut for your business. Extra cards $15.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <p class="nosub"><b>No subscription, no monthly fee.</b> You buy the pieces once and they are yours. If one ever stops working, I replace it.</p>
+</section>
+
+<section class="contact">
+  <table>
+    <tr>
+      <td style="width:57%">
+        <p class="who">Talk to me directly</p>
+        <p class="line">(385) 395-2285</p>
+        <p class="mail">nicolas10ledesma@gmail.com</p>
+      </td>
+      <td style="width:43%">
+        <p class="ask">The sample I left you is <b>already programmed with your business</b>. Tap it with your phone &mdash; your own review page opens. Text me when you want one with your name on it.</p>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<p class="footnote">Made locally in South Lake Tahoe &middot; delivered and installed in person</p>
+
+</body>
+</html>
