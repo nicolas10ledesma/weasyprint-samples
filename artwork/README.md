@@ -29,19 +29,25 @@ sheet, dark version on page 1 and cream on page 2.
 | `source/` | The two PDFs as they came out of the design tool. Do not send these to a printer. |
 | `print/HORIZONTAL-7.9x1.9-outlined.pdf` | Counter piece, text outlined. **Send this one.** |
 | `print/VERTICAL-2x8-outlined.pdf` | Check-presenter piece, text outlined. **Send this one.** |
-| `print/COLOR-OPTIONS.pdf` | One sheet, four dark colourways at real size, for picking a replacement for the dark green. |
+| `print/HORIZONTAL-7.9x1.9-NAVY-outlined.pdf` | **Current counter piece.** Dark side in midnight navy, cream side untouched. |
+| `print/VERTICAL-2x8-NAVY-outlined.pdf` | **Current check-presenter piece.** Same. |
+| `print/COLOR-OPTIONS.pdf` | The four dark colourways at real size. Midnight navy was chosen. |
+| `print/CREAM-INK-CHECK.pdf` | The cream card in green ink and in navy ink, side by side — open question. |
 
 ## Colours
 
 | Role | CMYK |
 |---|---|
-| Dark green (current) | 82 · 58 · 68 · 72 |
+| Midnight navy (chosen, dark side) | 94 · 78 · 38 · 52 |
+| Muted line on navy | 38 · 22 · 10 · 28 |
+| Dark green (original; still the ink on the cream side) | 82 · 58 · 68 · 72 |
 | Gold | 16 · 32 · 95 · 5 |
 | Cream | 2 · 3 · 10 · 0 |
 | Muted line, on dark | 30 · 14 · 28 · 30 |
 | Muted line, on cream | 52 · 34 · 42 · 28 |
 
-Candidates on the options sheet — background, then the muted line that goes with it:
+`recolour.sh` does the swap and the outlining in one pass. The other candidates
+from the options sheet, background then the muted line that goes with it:
 
 | Name | Background | Muted line |
 |---|---|---|
