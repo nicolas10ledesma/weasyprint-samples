@@ -242,6 +242,7 @@ tr:last-child th, tr:last-child td { border-bottom: none; }
   margin-bottom: 0.045in;
 }
 .rule p { margin: 0; color: var(--soft); }
+.rule p + p { margin-top: 0.07in; }
 
 /* ---------- price ---------- */
 
@@ -279,6 +280,21 @@ tr:last-child th, tr:last-child td { border-bottom: none; }
 }
 .pdesc { margin: 0; font-size: 8.2pt; line-height: 1.4; color: var(--soft); }
 .fine { font-size: 8.2pt; color: var(--faint); margin: 0; }
+
+.cmp { font-size: 8.8pt; width: 100%; }
+.cmp th.num, .cmp td.num {
+  width: 1.55in;
+  text-align: right;
+  font-family: "Liberation Sans", Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+.cmp th { border-bottom: 0.6pt solid var(--ink); font-size: 7pt; letter-spacing: 0.08em; }
+.cmp th:first-child { width: auto; }
+.cmp td { padding: 0.05in 0; color: var(--soft); }
+.cmp td.num { font-weight: bold; font-size: 9.4pt; color: var(--soft); }
+.cmp td.me { color: var(--pine); font-weight: bold; }
+.cmp td.num.me { color: var(--pine); font-size: 10.5pt; }
+.cmp td:not(.num) { padding-right: 0.14in; }
 
 /* ---------- start row ---------- */
 

@@ -23,8 +23,8 @@ html {
 body {
   margin: 0;
   font-family: "Bitstream Charter", Charter, serif;
-  font-size: 8.2pt;
-  line-height: 1.38;
+  font-size: 8.05pt;
+  line-height: 1.35;
   color: var(--ink);
   hyphens: none;
 }
@@ -94,7 +94,7 @@ h2 {
 
 /* ---------- how it works ---------- */
 
-.how { margin-bottom: 0.11in; }
+.how { margin-bottom: 0.1in; }
 
 .how ol {
   list-style: none;
@@ -237,6 +237,15 @@ li { margin-bottom: 0.048in; }
   font-size: 7.2pt;
   color: var(--soft);
 }
+.vsonline {
+  margin: 0.05in 0 0;
+  padding-top: 0.05in;
+  border-top: 0.5pt dotted var(--rule);
+  font-size: 7.4pt;
+  line-height: 1.35;
+  color: var(--soft);
+}
+.vsonline strong { color: var(--pine); }
 .smallpacks strong { color: var(--pine); }
 
 /* ---------- also ---------- */

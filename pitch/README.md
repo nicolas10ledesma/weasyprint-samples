@@ -9,6 +9,29 @@ Two printable pieces, rendered with WeasyPrint.
 
 Both are US Letter, English, and print fine in black and white.
 
+## Competitor prices
+
+The comparison on page 3 of the dossier uses advertised single-unit prices for
+one NFC review card, August 2026:
+
+| Seller | Price |
+|---|---|
+| ReviewZaps (PVC card) | $24.95 |
+| Taps Reviews (from) | $24.99 |
+| TAPro Card ($24.90–$29.00, midpoint) | $26.95 |
+| TAPiTAG (€24.99, converted) | ~$27.00 |
+| OneTap Review (NFC + QR) | $28.05 |
+| **Average** | **$26.39** |
+| Cheapest listing found anywhere (Etsy) | $16.98 |
+| Steel version (Tap On Reviews) | $39.95 |
+
+Against $15 that is 43 % below the average of the five and 12 % below the
+cheapest listing found anywhere.
+
+No verified competitor price for an acrylic *stand* was found, so the documents
+make no claim about stand pricing — don't add one without a source. Re-check
+these before a reprint; they move.
+
 ## Rebuild
 
 ```sh
