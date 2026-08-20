@@ -151,3 +151,23 @@ def apply_spec(block, spec):
         for i in range(len(lines))
         if not (i in out and not out[i])
     )
+
+
+# ---- the 5 x 7 in counter sign -------------------------------------------
+# One piece for a business that only has room for one: a café or an ice cream
+# shop with a single spot beside the register. Bigger type, and the two tap
+# zones end up 4.6 in apart — far more than the 3 in that keeps a phone from
+# reading the wrong one.
+SIGN_5x7_SPEC = [
+    ('img',  8,        dict(k=1.85, dy=-31.78)),                    # Google logo
+    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.62, dy=-51.80)),   # Google NFC ring
+    ('text', 37,       dict(size=11.5, tc=2.71, dy=-69.00)),        # TAP TO REVIEW
+    ('img',  39,       dict(k=1.85, dy=-10.03)),                    # Yelp logo
+    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.62, dy=-30.05)),   # Yelp NFC ring
+    ('text', 68,       dict(size=11.5, tc=2.71, dy=-47.25)),        # FIND US ON YELP
+    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.75, dy=-14.00)),   # stars
+    ('text', 84,       dict(size=35, tc=0.35, dy=-24.10)),          # How did
+    ('text', 85,       dict(size=35, tc=0.35, dy=-40.10)),          # we do?
+    ('text', 86,       dict(size=10.3, tc=2.97, dy=-45.50)),        # ONE TAP
+    ('text', 87,       dict(size=10.3, tc=2.97, dy=-49.40)),        # NO APP, NO TYPING
+]

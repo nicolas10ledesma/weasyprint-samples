@@ -30,6 +30,7 @@ sheet, dark version on page 1 and cream on page 2.
 | `print/HORIZONTAL-8x2-NAVY-outlined.pdf` | **Counter insert, 8 × 2 in** — full size for the acrylic holder. Three per landscape sheet. |
 | `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | **Check-presenter card, 3 × 8 in.** Three per landscape sheet. |
 | `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | Same card, two per portrait sheet, for a printer that clips the 3up. |
+| `print/COUNTER-SIGN-5x7-NAVY-outlined.pdf` | **Counter sign, 5 × 7 in** — the single upright piece for a business with only one spot. Two per landscape sheet. |
 | `archive/` | The original green files. Kept for reference, not for printing. |
 
 ## Element sizes
@@ -58,6 +59,25 @@ The logos went up a second time, from 17.0 to 18.4 mm, on their own — the ring
 and the type were already right, so only the two `img` scales moved.
 
 Tap-zone positions are untouched and both sheets still yield three cards.
+
+## The 5 × 7 counter sign
+
+For a café or an ice cream shop that will only ever put one piece beside the
+register, the 8 × 2 strip reads as an afterthought. `build-sign.py` lays the same
+artwork out upright at 5 × 7 in — the standard photo-frame size, so slant-back
+acrylic holders for it are everywhere and cheap in six-packs.
+
+A4 was considered and rejected: on a small counter a full page reads as
+advertising and managers push back on the footprint. 5 × 7 keeps the presence
+without taking the counter over. 5.5 × 8.5 (half letter) is the step up if more
+presence is ever wanted — it also cuts two per sheet with no waste.
+
+The two tap zones end up **4.6 in apart**, centre to centre. An NTAG213 reads at
+about 4 cm, so anything past roughly 3 in makes it impossible for a phone held to
+one zone to pick up the other. There is a lot of margin here.
+
+Type on this piece: headline 35 pt, "TAP TO REVIEW" 11.5 pt, the muted line
+10.3 pt, logos 23 mm, NFC ring 22 mm.
 
 ## Colours
 

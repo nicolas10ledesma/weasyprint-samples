@@ -244,6 +244,17 @@ tr:last-child th, tr:last-child td { border-bottom: none; }
 .rule p { margin: 0; color: var(--soft); }
 .rule p + p { margin-top: 0.07in; }
 
+.hilite {
+  margin: 0.09in 0 0.06in;
+  padding: 0.09in 0.13in;
+  background: var(--wash);
+  border-left: 3pt solid var(--amber);
+  font-size: 9.4pt;
+  line-height: 1.42;
+  color: var(--ink);
+}
+.hilite strong { color: var(--pine); }
+
 /* ---------- price ---------- */
 
 .pricegrid { display: flex; gap: 0.16in; margin-bottom: 0.09in; }
