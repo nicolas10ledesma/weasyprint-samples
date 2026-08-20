@@ -25,6 +25,11 @@ weasyprint dossier.html dossier.pdf
   counter stand `$30`/`$33` · check-presenter card `$15`/`$18` · 2 stands `$50`/`$55` ·
   5 cards `$65`/`$80` · 1 stand + 5 cards `$85`/`$100` · 2 stands + 10 cards `$150`/`$175` ·
   4 stands + 20 cards `$280`/`$320`. They live in the price block of each file.
+  **The printed price is final** — no sales tax, no fees, no setup charge. Don't add a tax line back in.
+- **No free sample left behind, and no second visit.** The demo happens on the spot with the piece
+  in hand; the ask is that they buy one that day. Both files close on "start with one stand, $30".
+- **Both pieces carry two tap zones** — Google and the second platform. The check-presenter card is
+  not Google-only.
 - **The offer is product plus one visit** — hardware, configuration and, if paid for, design. No
   follow-up visits, no tap reports, no refund if a piece goes unused. Both files are written that
   way; don't let promises of ongoing service back in.
