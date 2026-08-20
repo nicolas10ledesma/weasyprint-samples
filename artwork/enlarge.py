@@ -106,10 +106,10 @@ _FIRST_TRY_TOO_BIG = [
 # Moderate pass for the vertical: bigger logos and bigger centre type, but a
 # long way short of the first attempt, which crowded the card.
 VERT_SPEC = [
-    ('img',  8,        dict(k=1.25, dy=2)),                       # Google logo
+    ('img',  8,        dict(k=1.36, dy=3)),                       # Google logo
     ('path', (11, 37), dict(cx=72, cy=461.4, k=1.15, dy=0)),      # Google NFC ring
     ('text', 37,       dict(size=8.0, tc=1.85, dy=-1)),           # TAP TO REVIEW
-    ('img',  39,       dict(k=1.25, dy=3)),                       # Yelp logo
+    ('img',  39,       dict(k=1.36, dy=4)),                       # Yelp logo
     ('path', (42, 68), dict(cx=72, cy=108.6, k=1.15, dy=0)),      # Yelp NFC ring
     ('text', 68,       dict(size=8.0, tc=1.85, dy=-1)),           # FIND US ON YELP
     ('path', (69, 84), dict(cx=72, cy=322.4, k=1.20, dy=0)),      # stars

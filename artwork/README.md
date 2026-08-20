@@ -47,12 +47,15 @@ went much further and crowded the card — it is kept in `enlarge.py` as
 
 | Vertical | Was | Now |
 |---|---|---|
-| Google logo | 13.6 mm | 17.0 mm |
-| Yelp logo | 12.2 mm | 15.2 mm |
+| Google logo | 13.6 mm | 18.4 mm |
+| Yelp logo | 12.2 mm | 16.6 mm |
 | NFC ring | 14.8 mm | 17.0 mm |
 | "TAP TO REVIEW" | 6.8 pt | 8.0 pt |
 | "ONE TAP / NO APP" | 6.6 pt | 7.6 pt |
 | "How did we do?" | 20 pt | 23 pt |
+
+The logos went up a second time, from 17.0 to 18.4 mm, on their own — the ring
+and the type were already right, so only the two `img` scales moved.
 
 Tap-zone positions are untouched and both sheets still yield three cards.
 
