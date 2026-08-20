@@ -89,7 +89,7 @@ def wrap_paths(lines, cx, cy, k, dy):
 
 # ---- what gets scaled, per card -------------------------------------------
 # (kind, line index or range, parameters)
-VERT_SPEC = [
+_FIRST_TRY_TOO_BIG = [
     ('img',  8,            dict(k=1.45, dy=4)),          # Google logo
     ('path', (11, 37),     dict(cx=72, cy=461.4, k=1.30, dy=0)),
     ('text', 37,           dict(size=9.0, tc=2.1, dy=-3)),   # TAP TO REVIEW
@@ -103,7 +103,23 @@ VERT_SPEC = [
     ('text', 87,           dict(size=8.6, tc=2.5, dy=-5)),  # NO APP, NO TYPING
 ]
 
-HORIZ_SPEC = [
+# Moderate pass for the vertical: bigger logos and bigger centre type, but a
+# long way short of the first attempt, which crowded the card.
+VERT_SPEC = [
+    ('img',  8,        dict(k=1.25, dy=2)),                       # Google logo
+    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.15, dy=0)),      # Google NFC ring
+    ('text', 37,       dict(size=8.0, tc=1.85, dy=-1)),           # TAP TO REVIEW
+    ('img',  39,       dict(k=1.25, dy=3)),                       # Yelp logo
+    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.15, dy=0)),      # Yelp NFC ring
+    ('text', 68,       dict(size=8.0, tc=1.85, dy=-1)),           # FIND US ON YELP
+    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.20, dy=0)),      # stars
+    ('text', 84,       dict(size=23, tc=0.23, dy=1)),             # How did
+    ('text', 85,       dict(size=23, tc=0.23, dy=-1)),            # we do?
+    ('text', 86,       dict(size=7.6, tc=2.15, dy=-1)),           # ONE TAP
+    ('text', 87,       dict(size=7.6, tc=2.15, dy=-3)),           # NO APP, NO TYPING
+]
+
+_UNUSED_HORIZ_SPEC = [
     ('img',  8,            dict(k=1.35, dy=3)),
     ('path', (11, 37),     dict(cx=95.04, cy=65.4, k=1.25, dy=0)),
     ('text', 37,           dict(size=8.4, tc=2.0, dy=-2)),

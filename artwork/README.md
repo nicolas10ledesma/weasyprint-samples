@@ -27,38 +27,34 @@ sheet, dark version on page 1 and cream on page 2.
 | Path | What it is |
 |---|---|
 | `source/` | The two PDFs as they came out of the design tool. Do not send these to a printer. |
-| `print/HORIZONTAL-7.9x1.9-outlined.pdf` | Counter piece, text outlined. **Send this one.** |
-| `print/VERTICAL-2x8-outlined.pdf` | Check-presenter piece, text outlined. **Send this one.** |
-| `print/HORIZONTAL-7.9x1.9-NAVY-v2-outlined.pdf` | **Current counter piece.** Navy, elements scaled up. |
-| `print/VERTICAL-3x8-NAVY-v2-3up-outlined.pdf` | **Current check-presenter piece.** Navy, 3 in wide, elements scaled up. Three per landscape sheet. |
-| `print/VERTICAL-3x8-NAVY-v2-2up-outlined.pdf` | Same, two per portrait sheet, for a printer that clips the 3up. |
-| `print/SIZE-COMPARISON.pdf` | Old element sizes against new, both pieces, at real size. |
-| `print/HORIZONTAL-7.9x1.9-NAVY-outlined.pdf` | Previous counter piece, small elements. |
-| `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | Previous 3 in card, small elements. |
-| `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | Same, two up. |
-| `print/COLOR-OPTIONS.pdf` | The four dark colourways at real size. Midnight navy was chosen. |
-| `print/CREAM-INK-CHECK.pdf` | The cream card in green ink and in navy ink, side by side. Navy won. |
+| `print/HORIZONTAL-8x2-NAVY-outlined.pdf` | **Counter insert, 8 × 2 in** — full size for the acrylic holder. Three per landscape sheet. |
+| `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | **Check-presenter card, 3 × 8 in.** Three per landscape sheet. |
+| `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | Same card, two per portrait sheet, for a printer that clips the 3up. |
 | `archive/` | The original green files. Kept for reference, not for printing. |
 
 ## Element sizes
 
-The art was drawn for a 2 x 8 in card and never grew when the card went to
-3 x 8, so on the printed piece the logos and the small type read small.
-`enlarge.py` scales each element about its own centre — text is re-centred from
-the real advance widths of the fonts embedded in the source PDF, not by eye —
-and `build-v2.py` assembles the sheets.
+**Horizontal.** The acrylic holder is 8 × 2 in, so the insert is 8 × 2 and fills
+it edge to edge instead of leaving a white margin inside the holder. Only the
+card grew — every element keeps its original size.
 
-| | Was | Vertical now | Horizontal now |
-|---|---|---|---|
-| Google logo | 13.6 mm | 19.7 mm | 18.3 mm |
-| Yelp logo | 12.2 mm | 17.7 mm | 16.5 mm |
-| NFC ring | 14.8 mm | 19.3 mm | 18.5 mm |
-| "TAP TO REVIEW" | 6.8 pt | 9.0 pt | 8.4 pt |
-| "ONE TAP / NO APP" | 6.6 pt | 8.6 pt | 8.8 pt |
-| "How did we do?" | 20 / 25 pt | 26 pt | 30 pt |
+**Vertical.** The art was drawn for a 2-inch-wide card and did not grow when the
+card went to 3 inches, so the logos and the centre type read small. `enlarge.py`
+scales each element about its own centre; text is re-centred from the real
+advance widths of the fonts embedded in the source PDF, not by eye. A first pass
+went much further and crowded the card — it is kept in `enlarge.py` as
+`_FIRST_TRY_TOO_BIG` so the same mistake isn't repeated.
 
-The trim sizes did not change, so the tap zones stay where they were and the
-sheets still yield three cards each.
+| Vertical | Was | Now |
+|---|---|---|
+| Google logo | 13.6 mm | 17.0 mm |
+| Yelp logo | 12.2 mm | 15.2 mm |
+| NFC ring | 14.8 mm | 17.0 mm |
+| "TAP TO REVIEW" | 6.8 pt | 8.0 pt |
+| "ONE TAP / NO APP" | 6.6 pt | 7.6 pt |
+| "How did we do?" | 20 pt | 23 pt |
+
+Tap-zone positions are untouched and both sheets still yield three cards.
 
 ## Colours
 
@@ -94,7 +90,7 @@ no font survived outlining and no colour fell out of CMYK. Measured today:
 
 | File | Trim | Per sheet | Tightest margin | Gap to cut in |
 |---|---|---|---|---|
-| `HORIZONTAL-7.9x1.9-NAVY` | 7.903 × 1.900 in | 3 | 0.650 in | 0.750 in |
+| `HORIZONTAL-8x2-NAVY` | 8.003 × 2.000 in | 3 | 0.623 in | 0.627 in |
 | `VERTICAL-3x8-NAVY-3up` | 3.003 × 8.000 in | 3 | 0.250 in | 0.497 in |
 | `VERTICAL-3x8-NAVY-2up` | 3.000 × 8.003 in | 2 | 0.833 in | 0.833 in |
 
