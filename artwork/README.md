@@ -29,12 +29,36 @@ sheet, dark version on page 1 and cream on page 2.
 | `source/` | The two PDFs as they came out of the design tool. Do not send these to a printer. |
 | `print/HORIZONTAL-7.9x1.9-outlined.pdf` | Counter piece, text outlined. **Send this one.** |
 | `print/VERTICAL-2x8-outlined.pdf` | Check-presenter piece, text outlined. **Send this one.** |
-| `print/HORIZONTAL-7.9x1.9-NAVY-outlined.pdf` | **Current counter piece.** Navy background on page 1, navy ink on cream on page 2. |
-| `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | **Current check-presenter piece, 3 in wide.** Three per Letter sheet, landscape. |
-| `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | The same 3 in card, two per portrait sheet, for a printer that clips the 3up. |
+| `print/HORIZONTAL-7.9x1.9-NAVY-v2-outlined.pdf` | **Current counter piece.** Navy, elements scaled up. |
+| `print/VERTICAL-3x8-NAVY-v2-3up-outlined.pdf` | **Current check-presenter piece.** Navy, 3 in wide, elements scaled up. Three per landscape sheet. |
+| `print/VERTICAL-3x8-NAVY-v2-2up-outlined.pdf` | Same, two per portrait sheet, for a printer that clips the 3up. |
+| `print/SIZE-COMPARISON.pdf` | Old element sizes against new, both pieces, at real size. |
+| `print/HORIZONTAL-7.9x1.9-NAVY-outlined.pdf` | Previous counter piece, small elements. |
+| `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | Previous 3 in card, small elements. |
+| `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | Same, two up. |
 | `print/COLOR-OPTIONS.pdf` | The four dark colourways at real size. Midnight navy was chosen. |
 | `print/CREAM-INK-CHECK.pdf` | The cream card in green ink and in navy ink, side by side. Navy won. |
 | `archive/` | The original green files. Kept for reference, not for printing. |
+
+## Element sizes
+
+The art was drawn for a 2 x 8 in card and never grew when the card went to
+3 x 8, so on the printed piece the logos and the small type read small.
+`enlarge.py` scales each element about its own centre — text is re-centred from
+the real advance widths of the fonts embedded in the source PDF, not by eye —
+and `build-v2.py` assembles the sheets.
+
+| | Was | Vertical now | Horizontal now |
+|---|---|---|---|
+| Google logo | 13.6 mm | 19.7 mm | 18.3 mm |
+| Yelp logo | 12.2 mm | 17.7 mm | 16.5 mm |
+| NFC ring | 14.8 mm | 19.3 mm | 18.5 mm |
+| "TAP TO REVIEW" | 6.8 pt | 9.0 pt | 8.4 pt |
+| "ONE TAP / NO APP" | 6.6 pt | 8.6 pt | 8.8 pt |
+| "How did we do?" | 20 / 25 pt | 26 pt | 30 pt |
+
+The trim sizes did not change, so the tap zones stay where they were and the
+sheets still yield three cards each.
 
 ## Colours
 
