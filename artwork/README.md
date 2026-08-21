@@ -33,7 +33,7 @@ sheet, dark version on page 1 and cream on page 2.
 | `print/SIGN-5x7-CREAM-outlined.pdf` | **Counter sign, 5 × 7 in**, cream with navy ink. Two per landscape sheet. |
 | `print/SIGN-5x7-NAVY-outlined.pdf` | Same sign, midnight navy. |
 | `print/SIGN-5x7-BURGUNDY-outlined.pdf` | Same sign, burgundy. |
-| `print/SIGN-5x7-OAK-outlined.pdf` | Same sign, oak brown. |
+| `print/SIGN-5x7-WALNUT-outlined.pdf` | Same sign, dark walnut. |
 | `print/SIGN-5x7-GRAPHITE-outlined.pdf` | Same sign, graphite. |
 | `archive/` | The original green files. Kept for reference, not for printing. |
 
@@ -91,7 +91,7 @@ Five colourways, built by `build-colorways.py`. Background CMYK, then the muted
 | Cream (navy ink) | 94 · 78 · 38 · 52 | 58 · 40 · 20 · 28 |
 | Midnight navy | 94 · 78 · 38 · 52 | 38 · 22 · 10 · 28 |
 | Burgundy | 40 · 94 · 68 · 55 | 22 · 40 · 30 · 28 |
-| Oak brown | 42 · 60 · 78 · 55 | 28 · 34 · 44 · 28 |
+| Dark walnut | 52 · 68 · 74 · 68 | 28 · 36 · 44 · 30 |
 | Graphite | 66 · 56 · 52 · 84 | 26 · 20 · 20 · 34 |
 
 ## Colours
@@ -147,6 +147,20 @@ replaced — comfortably inside what a digital press or a laser will hold.
 drifts outward leaves a white sliver along a dark card. Cutting half a
 millimetre *inside* the card avoids it and nobody can tell. A bleed-and-crop-marks
 version is only worth making for a commercial shop that trims for you.
+
+## Buying the acrylic holders
+
+Whatever the listing looks like, three things decide whether a holder works:
+
+- **No metal anywhere** — not the base, not a magnetic closure, not a metal
+  frame. Metal detunes the tag and the phone will not read it. Plain acrylic or
+  plastic only.
+- **The insert slides in and out.** A slide-in or top-loading holder is what
+  makes the $10 and $15 "add the logo later" upgrade possible. A sealed or glued
+  holder kills it.
+- **The right slot size**: 8 × 2 in for the counter strip, 5 × 7 in slant-back
+  for the counter sign. A slot cut exactly to size can bind on a full-bleed
+  insert — print one and try it before running the batch.
 
 ## Reprint checklist
 
