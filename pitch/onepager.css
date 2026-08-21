@@ -23,8 +23,8 @@ html {
 body {
   margin: 0;
   font-family: "Bitstream Charter", Charter, serif;
-  font-size: 8.05pt;
-  line-height: 1.35;
+  font-size: 7.85pt;
+  line-height: 1.32;
   color: var(--ink);
   hyphens: none;
 }
@@ -94,7 +94,7 @@ h2 {
 
 /* ---------- how it works ---------- */
 
-.how { margin-bottom: 0.1in; }
+.how { margin-bottom: 0.09in; }
 
 .how ol {
   list-style: none;
@@ -124,12 +124,30 @@ h2 {
 }
 .how p { margin: 0; color: var(--soft); }
 
+.pieces { margin-bottom: 0.11in; }
+.wherefig { display: flex; align-items: flex-start; gap: 0.16in; margin: 0; }
+.wherefig figure { flex: 1; margin: 0; }
+.wherefig svg {
+  width: 100%;
+  height: 0.94in;
+  display: block;
+  background: #FBFCFC;
+  border: 0.5pt solid var(--rule);
+}
+.wherefig figcaption {
+  margin-top: 0.04in;
+  font-size: 6.5pt;
+  line-height: 1.3;
+  color: var(--soft);
+}
+.wherefig figcaption strong { color: var(--pine); }
+
 /* ---------- middle two columns ---------- */
 
 .mid {
   display: flex;
-  gap: 0.22in;
-  margin-bottom: 0.12in;
+  gap: 0.2in;
+  margin-bottom: 0.1in;
 }
 .whatyouget { flex: 1.32; }
 .rules { flex: 1; }

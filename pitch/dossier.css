@@ -37,8 +37,8 @@ html {
 body {
   margin: 0;
   font-family: "Bitstream Charter", Charter, serif;
-  font-size: 9.0pt;
-  line-height: 1.46;
+  font-size: 8.8pt;
+  line-height: 1.43;
   color: var(--ink);
   hyphens: none;
 }
@@ -49,7 +49,7 @@ h1, h2, h3, .eyebrow, .n, .tap, .plat, .bn, .tl, .figcap,
 }
 
 p { margin: 0 0 0.09in; }
-section { margin-bottom: 0.24in; }
+section { margin-bottom: 0.2in; }
 .newpage { break-before: page; }
 .lastonpage { margin-bottom: 0; }
 
@@ -152,6 +152,28 @@ ol.steps.compact > li { margin-bottom: 0.1in; }
 }
 .never span { color: var(--amber); font-weight: bold; margin-right: 0.04in; }
 
+.wherefig {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.2in;
+  margin: 0.02in 0 0.16in;
+}
+.wherefig figure { flex: 1; margin: 0; }
+.wherefig svg {
+  width: 100%;
+  height: 1.62in;
+  display: block;
+  background: #FBFCFC;
+  border: 0.5pt solid var(--rule);
+}
+.wherefig figcaption {
+  margin-top: 0.05in;
+  font-size: 7.4pt;
+  line-height: 1.33;
+  color: var(--soft);
+}
+.wherefig figcaption strong { color: var(--pine); }
+
 /* ---------- the piece figure ---------- */
 
 .piecetitle {
@@ -227,6 +249,7 @@ tr:last-child th, tr:last-child td { border-bottom: none; }
 /* ---------- rules blocks ---------- */
 
 .rule {
+  break-inside: avoid;
   background: var(--wash);
   border-left: 3pt solid var(--pine);
   padding: 0.09in 0.13in;
@@ -292,7 +315,7 @@ tr:last-child th, tr:last-child td { border-bottom: none; }
 .pdesc { margin: 0; font-size: 8.2pt; line-height: 1.4; color: var(--soft); }
 .fine { font-size: 8.2pt; color: var(--faint); margin: 0; }
 
-.cmp { font-size: 8.8pt; width: 100%; }
+.cmp { font-size: 8.8pt; width: 100%; break-inside: avoid; }
 .cmp th.num, .cmp td.num {
   width: 1.55in;
   text-align: right;
@@ -358,8 +381,8 @@ tr:last-child th, tr:last-child td { border-bottom: none; }
   gap: 0.25in;
   background: var(--pine);
   color: #EAF1EE;
-  padding: 0.13in 0.17in;
-  margin-top: 0.15in;
+  padding: 0.12in 0.16in;
+  margin-top: 0.13in;
 }
 .contact .cl { flex: 1; }
 .ceyebrow {

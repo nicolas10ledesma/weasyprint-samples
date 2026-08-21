@@ -30,7 +30,11 @@ sheet, dark version on page 1 and cream on page 2.
 | `print/HORIZONTAL-8x2-NAVY-outlined.pdf` | **Counter insert, 8 × 2 in** — full size for the acrylic holder. Three per landscape sheet. |
 | `print/VERTICAL-3x8-NAVY-3up-outlined.pdf` | **Check-presenter card, 3 × 8 in.** Three per landscape sheet. |
 | `print/VERTICAL-3x8-NAVY-2up-outlined.pdf` | Same card, two per portrait sheet, for a printer that clips the 3up. |
-| `print/COUNTER-SIGN-5x7-NAVY-outlined.pdf` | **Counter sign, 5 × 7 in** — the single upright piece for a business with only one spot. Two per landscape sheet. |
+| `print/SIGN-5x7-CREAM-outlined.pdf` | **Counter sign, 5 × 7 in**, cream with navy ink. Two per landscape sheet. |
+| `print/SIGN-5x7-NAVY-outlined.pdf` | Same sign, midnight navy. |
+| `print/SIGN-5x7-BURGUNDY-outlined.pdf` | Same sign, burgundy. |
+| `print/SIGN-5x7-OAK-outlined.pdf` | Same sign, oak brown. |
+| `print/SIGN-5x7-GRAPHITE-outlined.pdf` | Same sign, graphite. |
 | `archive/` | The original green files. Kept for reference, not for printing. |
 
 ## Element sizes
@@ -78,6 +82,17 @@ one zone to pick up the other. There is a lot of margin here.
 
 Type on this piece: headline 35 pt, "TAP TO REVIEW" 11.5 pt, the muted line
 10.3 pt, logos 23 mm, NFC ring 22 mm.
+
+Five colourways, built by `build-colorways.py`. Background CMYK, then the muted
+"ONE TAP" line that goes with it:
+
+| | Background / ink | Muted line |
+|---|---|---|
+| Cream (navy ink) | 94 · 78 · 38 · 52 | 58 · 40 · 20 · 28 |
+| Midnight navy | 94 · 78 · 38 · 52 | 38 · 22 · 10 · 28 |
+| Burgundy | 40 · 94 · 68 · 55 | 22 · 40 · 30 · 28 |
+| Oak brown | 42 · 60 · 78 · 55 | 28 · 34 · 44 · 28 |
+| Graphite | 66 · 56 · 52 · 84 | 26 · 20 · 20 · 34 |
 
 ## Colours
 
