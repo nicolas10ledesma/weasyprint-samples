@@ -315,20 +315,27 @@ tr:last-child th, tr:last-child td { border-bottom: none; }
 .pdesc { margin: 0; font-size: 8.2pt; line-height: 1.4; color: var(--soft); }
 .fine { font-size: 8.2pt; color: var(--faint); margin: 0; }
 
-.cmp { font-size: 8.8pt; width: 100%; break-inside: avoid; }
-.cmp th.num, .cmp td.num {
-  width: 1.55in;
-  text-align: right;
-  font-family: "Liberation Sans", Arial, sans-serif;
-  font-variant-numeric: tabular-nums;
+.cmp { font-size: 8.6pt; width: 100%; break-inside: avoid; }
+.cmp th {
+  border-bottom: 0.6pt solid var(--ink);
+  font-size: 7pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+  font-weight: bold;
+  text-align: left;
+  padding: 0 0.16in 0.04in 0;
+  width: 2.05in;
 }
-.cmp th { border-bottom: 0.6pt solid var(--ink); font-size: 7pt; letter-spacing: 0.08em; }
 .cmp th:first-child { width: auto; }
-.cmp td { padding: 0.05in 0; color: var(--soft); }
-.cmp td.num { font-weight: bold; font-size: 9.4pt; color: var(--soft); }
+.cmp td {
+  padding: 0.055in 0.16in 0.055in 0;
+  color: var(--soft);
+  vertical-align: baseline;
+}
+.cmp td:first-child { padding-right: 0.2in; }
 .cmp td.me { color: var(--pine); font-weight: bold; }
-.cmp td.num.me { color: var(--pine); font-size: 10.5pt; }
-.cmp td:not(.num) { padding-right: 0.14in; }
+.cmp tr:last-child td { border-bottom: none; }
 
 /* ---------- start row ---------- */
 
