@@ -55,16 +55,16 @@ TEXT_RE = re.compile(
 IMG_RE = re.compile(r'^([\d.]+) 0 0 ([\d.]+) ([\d.]+) ([\d.]+) cm$')
 
 
-def scale_text(line, new_size, new_tc, dy):
+def scale_text(line, new_size, new_tc, dy, new_text=None):
     m = TEXT_RE.match(line)
     assert m, line[:80]
     tc_old = float(m.group(2))
     x, y = float(m.group(4)), float(m.group(5))
     fname, size_old = m.group(7), float(m.group(9))
-    body = m.group(13)
+    body = m.group(13) if new_text is None else new_text
     font = FONTS[fname]
     text = unescape(body)
-    w_old = text_width(font, text, size_old, tc_old)
+    w_old = text_width(font, unescape(m.group(13)), size_old, tc_old)
     w_new = text_width(font, text, new_size, new_tc)
     x_new = x - (w_new - w_old) / 2.0
     lead = new_size * 1.2
@@ -139,7 +139,10 @@ def apply_spec(block, spec):
         if kind == 'img':
             out[where] = [scale_img(lines[where], p['k'], p['dy'])]
         elif kind == 'text':
-            out[where] = [scale_text(lines[where], p['size'], p['tc'], p['dy'])]
+            out[where] = [scale_text(lines[where], p['size'], p['tc'], p['dy'],
+                                     p.get('text'))]
+        elif kind == 'drop':
+            out[where] = []
         else:
             a, b = where
             out[a] = wrap_paths(lines[a:b], p['cx'], p['cy'], p['k'], p['dy'])
@@ -159,15 +162,15 @@ def apply_spec(block, spec):
 # zones end up 4.6 in apart — far more than the 3 in that keeps a phone from
 # reading the wrong one.
 SIGN_5x7_SPEC = [
-    ('img',  8,        dict(k=1.85, dy=-31.78)),                    # Google logo
-    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.62, dy=-51.80)),   # Google NFC ring
-    ('text', 37,       dict(size=11.5, tc=2.71, dy=-69.00)),        # TAP TO REVIEW
-    ('img',  39,       dict(k=1.85, dy=-10.03)),                    # Yelp logo
-    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.62, dy=-30.05)),   # Yelp NFC ring
-    ('text', 68,       dict(size=11.5, tc=2.71, dy=-47.25)),        # FIND US ON YELP
-    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.75, dy=-14.00)),   # stars
-    ('text', 84,       dict(size=35, tc=0.35, dy=-24.10)),          # How did
-    ('text', 85,       dict(size=35, tc=0.35, dy=-40.10)),          # we do?
-    ('text', 86,       dict(size=10.3, tc=2.97, dy=-45.50)),        # ONE TAP
-    ('text', 87,       dict(size=10.3, tc=2.97, dy=-49.40)),        # NO APP, NO TYPING
+    ('img',  8,        dict(k=1.70, dy=-47.10)),                    # Google logo
+    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.50, dy=-66.65)),   # Google NFC ring
+    ('text', 37,       dict(size=10.5, tc=2.47, dy=-81.65)),        # TAP TO REVIEW
+    ('img',  39,       dict(k=1.70, dy=-1.40)),                     # Yelp logo
+    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.50, dy=-15.95)),   # Yelp NFC ring
+    ('text', 68,       dict(size=10.5, tc=2.47, dy=-30.95)),        # FIND US ON YELP
+    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.60, dy=-32.05)),   # stars
+    ('text', 84,       dict(size=33, tc=0.33, dy=-42.15, text='How did we do?')),
+    ('drop', 85,       dict()),                                     # the old second line
+    ('text', 86,       dict(size=9.5, tc=2.73, dy=-30.95)),         # ONE TAP
+    ('text', 87,       dict(size=9.5, tc=2.73, dy=-33.75)),         # NO APP, NO TYPING
 ]
