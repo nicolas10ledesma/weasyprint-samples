@@ -22,17 +22,17 @@ CREAM_NEW, INK_NEW, MUTED_NEW, RED_NEW = (
 
 # ---- layout with the client logo at the top ------------------------------
 LOGO_SPEC = [
-    ('img',  8,        dict(k=1.70, dy=-146.10)),                   # Google logo
-    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.50, dy=-157.65)),  # Google ring
-    ('text', 37,       dict(size=10.5, tc=2.47, dy=-168.65)),       # TAP TO REVIEW
-    ('img',  39,       dict(k=1.70, dy=-21.40)),                    # Yelp logo
-    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.50, dy=-32.95)),   # Yelp ring
-    ('text', 68,       dict(size=10.5, tc=2.47, dy=-43.95)),        # FIND US ON YELP
-    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.60, dy=-93.05)),   # stars
-    ('text', 84,       dict(size=33, tc=0.33, dy=-101.15, text='How did we do?')),
+    ('img',  8,        dict(k=1.70, dy=-32.50)),                    # Google logo, at the very top
+    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.50, dy=-45.05)),   # Google ring
+    ('text', 37,       dict(size=10.5, tc=2.47, dy=-57.05)),        # TAP TO REVIEW
+    ('img',  39,       dict(k=1.70, dy=-21.00)),                    # Yelp logo
+    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.50, dy=-33.55)),   # Yelp ring
+    ('text', 68,       dict(size=10.5, tc=2.47, dy=-45.55)),        # FIND US ON YELP
+    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.60, dy=-95.45)),   # stars
+    ('text', 84,       dict(size=33, tc=0.33, dy=-104.55, text='How did we do?')),
     ('drop', 85,       dict()),
-    ('text', 86,       dict(size=9.5, tc=2.73, dy=-79.95)),         # ONE TAP
-    ('text', 87,       dict(size=9.5, tc=2.73, dy=-81.75)),         # NO APP, NO TYPING
+    ('text', 86,       dict(size=9.5, tc=2.73, dy=-82.35, text='ONE TAP  -  NO APP, NO TYPING')),
+    ('drop', 87,       dict()),
 ]
 
 W, H, INSET, OLD_W = 360.0, 504.0, 9.0, 144.0
@@ -40,7 +40,7 @@ SHIFT = (W - OLD_W) / 2
 BG_OLD, BORDER_OLD = 'n 0 0 144 576 re f*', 'n 6.12 6.12 131.76 563.76 re S'
 BG_NEW = 'n 0 0 %g %g re f*' % (W, H)
 BORDER_NEW = 'n %g %g %g %g re S' % (INSET, INSET, W - 2 * INSET, H - 2 * INSET)
-LOGO_H, LOGO_TOP = 92.0, 477.35          # in block coordinates, centred on x = 72
+LOGO_H, LOGO_TOP = 92.0, 339.35        # the client mark sits in the middle          # in block coordinates, centred on x = 72
 
 
 def blocks(d):

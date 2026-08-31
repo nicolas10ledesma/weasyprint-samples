@@ -162,15 +162,15 @@ def apply_spec(block, spec):
 # zones end up 4.6 in apart — far more than the 3 in that keeps a phone from
 # reading the wrong one.
 SIGN_5x7_SPEC = [
-    ('img',  8,        dict(k=1.70, dy=-47.10)),                    # Google logo
-    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.50, dy=-66.65)),   # Google NFC ring
-    ('text', 37,       dict(size=10.5, tc=2.47, dy=-81.65)),        # TAP TO REVIEW
-    ('img',  39,       dict(k=1.70, dy=-1.40)),                     # Yelp logo
-    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.50, dy=-15.95)),   # Yelp NFC ring
-    ('text', 68,       dict(size=10.5, tc=2.47, dy=-30.95)),        # FIND US ON YELP
-    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.60, dy=-32.05)),   # stars
-    ('text', 84,       dict(size=33, tc=0.33, dy=-42.15, text='How did we do?')),
-    ('drop', 85,       dict()),                                     # the old second line
-    ('text', 86,       dict(size=9.5, tc=2.73, dy=-30.95)),         # ONE TAP
-    ('text', 87,       dict(size=9.5, tc=2.73, dy=-33.75)),         # NO APP, NO TYPING
+    ('img',  8,        dict(k=1.70, dy=-44.50)),                    # Google logo
+    ('path', (11, 37), dict(cx=72, cy=461.4, k=1.50, dy=-64.05)),   # Google NFC ring
+    ('text', 37,       dict(size=10.5, tc=2.47, dy=-79.05)),        # TAP TO REVIEW
+    ('img',  39,       dict(k=1.70, dy=-4.00)),                     # Yelp logo
+    ('path', (42, 68), dict(cx=72, cy=108.6, k=1.50, dy=-18.55)),   # Yelp NFC ring
+    ('text', 68,       dict(size=10.5, tc=2.47, dy=-33.55)),        # FIND US ON YELP
+    ('path', (69, 84), dict(cx=72, cy=322.4, k=1.60, dy=-43.45)),   # stars
+    ('text', 84,       dict(size=33, tc=0.33, dy=-53.55, text='How did we do?')),
+    ('drop', 85,       dict()),
+    ('text', 86,       dict(size=9.5, tc=2.73, dy=-33.35, text='ONE TAP  -  NO APP, NO TYPING')),
+    ('drop', 87,       dict()),
 ]

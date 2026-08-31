@@ -80,8 +80,17 @@ The two tap zones end up **4.6 in apart**, centre to centre. An NTAG213 reads at
 about 4 cm, so anything past roughly 3 in makes it impossible for a phone held to
 one zone to pick up the other. There is a lot of margin here.
 
-Type on this piece: headline 35 pt, "TAP TO REVIEW" 11.5 pt, the muted line
-10.3 pt, logos 23 mm, NFC ring 22 mm.
+Type on this piece: headline 33 pt on one line, "TAP TO REVIEW" 10.5 pt, the
+muted line 9.5 pt (also one line), logos 23 mm, NFC ring 22 mm.
+
+`build-client.py` is the variant that carries a client's own mark. It sits in
+the middle of the card, which pushes the two tap zones to the very top and
+bottom — 4.74 in apart, further than the generic layout manages.
+
+One gotcha worth remembering: the em dash the horizontal piece uses between
+"ONE TAP" and "NO APP, NO TYPING" is character 1 in these subsets, and the
+outline for it is **empty in the vertical PDF's font** even though the cmap
+lists it. It prints as a gap. The vertical pieces use a plain hyphen instead.
 
 Five colourways, built by `build-colorways.py`. Background CMYK, then the muted
 "ONE TAP" line that goes with it:
